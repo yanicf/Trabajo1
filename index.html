@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>TRABAJO1</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form">
+            <h1 class="titulo">¡REGISTRATE!</h1>
+            <div class="input nombre">
+                <label for="nombre">Nombre</label><br>
+                <input type="text-word" id="nombre" placeholder="Ingrese su nombre" required="" pattern="[a-zA-Z]+">
+            </div>
+            <div class="input correo">
+                <label for="correo">Correo</label><br>
+                <input type="mail" id="correo" placeholder="Ingrese su correo" required="">
+            </div>
+            <div class="input numero">
+                <label for="numero">Número Random</label><br>
+                <input type="number" id="numero" placeholder="Ingrese su número" required="" pattern="[0-9]+" min="0" max="999999">
+            </div>
+            <div class="boton">
+                <input type="submit" value="Enviar" id="btn" disabled>
+            </div>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

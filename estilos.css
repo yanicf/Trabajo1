@@ -1,0 +1,88 @@
+/*------------GENERALES----------*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cbody);
+    margin: 0%;
+    padding: 10%;
+    border: center;
+    background: url(fondo.jpg);
+
+}
+.container{
+    /* border: 3px solid black; */
+    max-width: 90%;
+    margin: auto;
+    margin-top: 150px;
+}
+:root{
+    --cbody: aquamarine;
+    --cnegro: rgb(103, 129, 216);
+    --ctext: rgb(175, 238, 238);
+    --cblanco: white;
+    --cdark: rgb(59, 11, 220);
+    --cerror: rgb(156, 29, 29);
+}
+/*------------FORMULARIO------------*/
+.form{
+    /* border: 3px solid green; */
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    font-family: cursive;
+    padding: 30px 40px;
+    background: rgba(5,7,12,0.50);
+    border-radius: 20px;
+}
+.titulo{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 10px;
+    color: var(--cblanco);
+
+}
+.input{
+    display: block;
+    margin-top: 20px;
+}
+.input label{
+    color: var(--ctext);
+}
+.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid var(--cnegro);
+    color: darkgrey;
+}
+.input label:hover {
+    font-weight: bold;
+    color: var(--cnegro);
+}
+.boton{
+    margin-top: 20px;
+}
+.boton input{
+    background: rgb(0, 0, 0);
+    color: var(--cblanco);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: block;
+    margin: auto;
+}
+.boton input:hover{
+    background: var(--cdark);
+}
+.error{
+    color: var(--cerror);
+    margin: 0%;
+    font-size: 10px;
+    font-weight: bold;
+}
+.mensaje_correcto{
+    text-align: center;
+    font-weight: bold;
+}
